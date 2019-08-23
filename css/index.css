@@ -167,12 +167,12 @@ body {
   background-attachment: fixed;
   background-repeat: no-repeat;
 }
-body .container {
+body header {
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
 }
-body .container .header-text {
+body header .header-text {
   margin-top: 302px;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.7);
@@ -180,7 +180,7 @@ body .container .header-text {
   width: 100%;
   padding: 2rem;
 }
-body .container .header-text h1 {
+body header .header-text h1 {
   margin-bottom: 20px;
 }
 .navigation {
