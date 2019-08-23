@@ -190,8 +190,23 @@ body header .header-text h1 {
   color: white;
   height: 5rem;
 }
+.navigation .img {
+  display: flex;
+}
+.navigation .img img {
+  margin: 1rem auto auto 1rem;
+  width: 40px;
+  height: 31px;
+}
+.navigation .img span {
+  margin: auto 0;
+  margin-left: 10px;
+  margin-right: 10px;
+}
 .navigation nav {
   display: flex;
+  align-items: center;
+  width: 100%;
   justify-content: space-between;
 }
 .navigation nav a {
