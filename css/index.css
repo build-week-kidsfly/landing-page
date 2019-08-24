@@ -197,11 +197,12 @@ body header .header-text h1 {
   margin: 1rem auto auto 1rem;
   width: 40px;
   height: 31px;
+  margin-right: 15px;
 }
 .navigation .img span {
   margin: auto 0;
   margin-left: 10px;
-  margin-right: 10px;
+  margin-right: 20px;
 }
 .navigation nav {
   display: flex;
@@ -216,7 +217,7 @@ body header .header-text h1 {
 .navigation nav a {
   text-decoration: none;
   color: white;
-  font-size: 25px;
+  font-size: 1.4em;
   width: 8em;
   height: 2em;
   text-align: center;
@@ -252,7 +253,7 @@ body header .header-text h1 {
   width: 100%;
   height: 100%;
   border-radius: 0;
-  background-color: dodgerblue;
+  background-color: white;
 }
 .navigation nav a:hover::before {
   top: 0;
@@ -260,4 +261,9 @@ body header .header-text h1 {
 .navigation nav a:hover::after {
   right: -0.4em;
   filter: brightness(0.8);
+}
+.navigation .login a {
+  background-color: #40bf9f;
+  padding: 5px;
+  border-radius: 10px;
 }
