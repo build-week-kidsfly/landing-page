@@ -209,8 +209,55 @@ body header .header-text h1 {
   width: 100%;
   justify-content: space-between;
 }
+.navigation nav .nav-elements {
+  padding: 0;
+  list-style-type: none;
+}
 .navigation nav a {
-  margin: auto 2rem;
   text-decoration: none;
-  color: red;
+  color: white;
+  font-size: 25px;
+  width: 8em;
+  height: 2em;
+  text-align: center;
+  line-height: 2em;
+  font-family: sans-serif;
+  text-transform: capitalize;
+  position: relative;
+  transition: 0.5s;
+  margin: 0.8em;
+}
+.navigation nav a::before,
+.navigation nav a::after {
+  content: "";
+  position: absolute;
+  width: 0.6em;
+  height: 0.6em;
+  transition: 0.5s cubic-bezier(0.5, -0.5, 0.25, 1.5);
+}
+.navigation nav a::before {
+  left: 0;
+  z-index: -1;
+}
+.navigation nav a::after {
+  right: 0;
+  z-index: -2;
+}
+.navigation nav a:hover {
+  color: white;
+  padding: 10px;
+}
+.navigation nav a:hover::before,
+.navigation nav a:hover::after {
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  background-color: dodgerblue;
+}
+.navigation nav a:hover::before {
+  top: 0;
+}
+.navigation nav a:hover::after {
+  right: -0.4em;
+  filter: brightness(0.8);
 }
