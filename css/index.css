@@ -407,7 +407,7 @@ footer .login-footer a {
   color: black;
   border-radius: 15px;
 }
-.form-container .input {
+.form-container .input2 {
   margin-bottom: 20px;
 }
 /* Full-width input fields */
@@ -449,5 +449,71 @@ footer .login-footer a {
 /* Add some hover effects to buttons */
 .form-container .btn:hover,
 .open-button:hover {
+  opacity: 2;
+}
+/* The popup form - hidden by default */
+.form-popup2 {
+  display: none;
+  position: fixed;
+  margin: 20px;
+  bottom: auto;
+  right: 75px;
+  z-index: 9;
+  border-radius: 20px;
+  border: 3px solid lightgrey;
+}
+/* Add styles to the form container */
+.form-container2 {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+  color: black;
+  border-radius: 15px;
+}
+.form-container2 .input {
+  margin-bottom: 20px;
+}
+/* Full-width input fields */
+.form-container2 input[type="text"],
+.form-container2 input[type="password"] {
+  margin: 10px 0 10px 0;
+  border-radius: 30px;
+  width: 100%;
+  font-size: 1.6em;
+  padding: 0.8em;
+  border: none;
+  text-decoration: none;
+  background-color: lightgrey;
+  color: grey;
+}
+/* When the inputs get focus, do something */
+.form-container2 input[type="text"]:focus,
+.form-container2 input[type="password"]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+/* Set a style for the submit/login button */
+.form-container2 .btn2 {
+  background-color: #40bf9f;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+  opacity: 0.8;
+  font-size: 1.6em;
+}
+.button2 {
+  margin-top: 20px;
+}
+/* Add a red background color to the cancel button */
+.form-container2 .cancel2 {
+  background-color: red;
+}
+/* Add some hover effects to buttons */
+.form-container2 .btn2:hover,
+.open-button2:hover {
   opacity: 2;
 }

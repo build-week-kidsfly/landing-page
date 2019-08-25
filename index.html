@@ -50,7 +50,30 @@
                 </div>
 
                 <!-- Sign Up Pop Up -->
-                <a href="#">Sign Up</a>
+                <a href="#" onclick="openForm2()">Sign Up</a>
+
+                <div class="form-popup2" id="myForm2">
+                    <form action="/action_page.php" class="form-container2">
+                        <h2>Sign Up</h2>
+
+                        <div class="input2">
+
+                            <input type="text" placeholder="Enter Name" name="name" required>
+
+                            <input type="text" placeholder="Enter Email" name="email" required>
+
+                            <input type="text" placeholder="Enter Password" name="password_1" required>
+
+                            <input type="text" placeholder="Enter Password Again" name="password_2" required>
+
+                        </div>
+
+                        <div class="button2">
+                            <button type="submit" class="btn2">Login</button>
+                            <button type="button" class="btn2 cancel2" onclick="closeForm2()">Close</button>
+                        </div>
+                    </form>
+                </div>
             </div>
 
         </nav>
@@ -142,7 +165,7 @@
         </div>
     </footer>
 
-    <!-- Login Pop Up Script -->
+    <!-- Login and Sign Up Pop Up Script -->
     <script>
         function openForm() {
             document.getElementById("myForm").style.display = "block";
@@ -150,6 +173,14 @@
 
         function closeForm() {
             document.getElementById("myForm").style.display = "none";
+        }
+
+        function openForm2() {
+            document.getElementById("myForm2").style.display = "block";
+        }
+
+        function closeForm2() {
+            document.getElementById("myForm2").style.display = "none";
         }
     </script>
 
