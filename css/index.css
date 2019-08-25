@@ -470,8 +470,12 @@ footer .login-footer a {
   color: black;
   border-radius: 15px;
 }
-.form-container2 .input {
+.form-container2 .input2 {
   margin-bottom: 20px;
+}
+.form-container2 span {
+  font-size: 1.4em;
+  margin: auto 10px;
 }
 /* Full-width input fields */
 .form-container2 input[type="text"],
