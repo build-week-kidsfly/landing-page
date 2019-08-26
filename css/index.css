@@ -181,6 +181,17 @@ body header .header-text {
   width: 100%;
   padding: 2rem;
 }
+@media (min-width: 800px) {
+  body header .header-text {
+    margin-bottom: 8em;
+  }
+}
+@media (min-width: 1000px) {
+  body header .header-text {
+    margin-top: 400px;
+    margin-bottom: 9em;
+  }
+}
 body header .header-text h1 {
   margin-bottom: 20px;
 }
