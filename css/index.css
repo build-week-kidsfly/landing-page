@@ -292,6 +292,20 @@ article .right-content {
   border: 1px solid black;
   border-radius: 10px;
   box-shadow: 2px 2px 5px 2px #cdbb98;
+  display: flex;
+  align-items: center;
+  height: 128px;
+}
+.features .feature-list .feature-img img {
+  width: 85%;
+  margin: 0% 0% 0% 5%;
+}
+.features .feature-list .vert-hr {
+  height: 90%;
+  margin: 1%;
+  background: black;
+  border: 3px solid black;
+  border-radius: 10px;
 }
 .contact {
   margin: 2em 1em;
