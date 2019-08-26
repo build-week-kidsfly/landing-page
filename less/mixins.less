@@ -9,6 +9,11 @@
   border-radius: @borderRadius;
 }
 
+.flex(@justify-content) {
+  display: flex;
+  justify-content: @justify-content;
+}
+
 // login & signup mixins
 .form-popup() {
   display: none;
@@ -62,4 +67,20 @@
   margin-bottom: 10px;
   opacity: 0.8;
   font-size: 1.6em;
+}
+
+// Other Mixins
+
+.a-nav-footer() {
+  text-decoration: none;
+  color: white;
+  font-size: 1.4em;
+  width: 8em;
+  height: 2em;
+  text-align: center;
+  line-height: 2em;
+  font-family: sans-serif;
+  text-transform: capitalize;
+  position: relative;
+  transition: 0.5s;
 }

@@ -1,6 +1,5 @@
 .navigation {
-  display: flex;
-  justify-content: space-between;
+  .flex(space-between);
   background-color: @nav-bk-color;
   color: white;
   height: 5rem;
@@ -17,10 +16,9 @@
   }
 
   nav {
-    display: flex;
+    .flex(space-between);
     align-items: center;
     width: 100%;
-    justify-content: space-between;
 
     .nav-elements {
       padding: 0;
@@ -28,17 +26,7 @@
     }
 
     a {
-      text-decoration: none;
-      color: white;
-      font-size: 1.4em;
-      width: 8em;
-      height: 2em;
-      text-align: center;
-      line-height: 2em;
-      font-family: sans-serif;
-      text-transform: capitalize;
-      position: relative;
-      transition: 0.5s;
+      .a-nav-footer();
       margin: 0.8em;
     }
 
