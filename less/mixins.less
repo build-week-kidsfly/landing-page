@@ -2,3 +2,85 @@
 @mobile: ~"(min-width: 500px)";
 @tablet: ~"(min-width: 800px)";
 @desktop: ~"(min-width: 1000px)";
+
+// Parametric Mixins
+.margin-br(@marginFirst, @marginSecond, @borderRadius) {
+  margin: @marginFirst @marginSecond;
+  border-radius: @borderRadius;
+}
+
+.flex(@justify-content) {
+  display: flex;
+  justify-content: @justify-content;
+}
+
+// login & signup mixins
+.form-popup() {
+  display: none;
+  position: fixed;
+  margin: 20px;
+  bottom: auto;
+  right: 75px;
+  z-index: 9;
+  border-radius: 20px;
+  border: 3px solid lightgrey;
+}
+
+.form-container() {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+  color: black;
+  border-radius: 15px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
+
+  .input2 {
+    margin-bottom: 20px;
+  }
+
+  span {
+    font-size: 1.4em;
+    margin: auto 10px;
+  }
+}
+
+.form-container-text-password() {
+  margin: 10px 0 10px 0;
+  border-radius: 30px;
+  width: 100%;
+  font-size: 1.6em;
+  padding: 0.8em;
+  border: none;
+  text-decoration: none;
+  background-color: lightgrey;
+  color: grey;
+}
+
+.form-container-btn() {
+  background-color: @button-background;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+  opacity: 0.8;
+  font-size: 1.6em;
+}
+
+// Other Mixins
+
+.a-nav-footer() {
+  text-decoration: none;
+  color: white;
+  font-size: 1.4em;
+  width: 8em;
+  height: 2em;
+  text-align: center;
+  line-height: 2em;
+  font-family: sans-serif;
+  text-transform: capitalize;
+  position: relative;
+  transition: 0.5s;
+}

@@ -1,0 +1,36 @@
+.contact {
+  .margin-br(2em, 1em, 5em);
+  background-color: @button-background;
+  text-align: center;
+  height: 550px;
+
+  form {
+    margin: 10px auto;
+
+    input,
+    textarea,
+    .submit {
+      .margin-br(0.8em, auto, 3em);
+      width: 70%;
+      font-size: 1.6em;
+      padding: 0.8em;
+      border: none;
+      text-decoration: none;
+      background-color: white;
+      color: grey;
+    }
+
+    textarea {
+      border-radius: 2em;
+    }
+
+    .submit {
+      color: black;
+    }
+
+    .submit:hover {
+      background-color: black;
+      color: white;
+    }
+  }
+}
