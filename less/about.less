@@ -1,12 +1,32 @@
-.left {
-  margin: auto 10px 20px 10px;
+// .left {
+//   margin: auto 10px 20px 10px;
+// }
+
+// .right {
+//   hr {
+//     border: 3px dashed @button-background;
+//   }
+//   img {
+//     margin-top: 30px;
+//   }
+// }
+
+article
+{
+  display: flex;
+  margin: 1% 1% 1% 1%;
+
+    .left-content { margin-right: 1%; }
+    .left-content { margin-left: 1%; }
+
+    .left-content, .right-content 
+    { 
+      width: 50%;
+      padding: 2%;
+      background: @panel-bk-color;
+      border: 1px solid black;
+      border-radius: 10px;
+      box-shadow: 2px 2px 5px 2px @panel-bk-shadow-color;
+    }
 }
 
-.right {
-  hr {
-    border: 3px dashed @button-background;
-  }
-  img {
-    margin-top: 30px;
-  }
-}

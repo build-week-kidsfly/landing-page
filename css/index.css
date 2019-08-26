@@ -263,28 +263,35 @@ body header .header-text h1 {
   padding: 5px;
   border-radius: 10px;
 }
-.left {
-  margin: auto 10px 20px 10px;
+article {
+  display: flex;
+  margin: 1% 1% 1% 1%;
 }
-.right hr {
-  border: 3px dashed #40bf9f;
+article .left-content {
+  margin-right: 1%;
 }
-.right img {
-  margin-top: 30px;
+article .left-content {
+  margin-left: 1%;
+}
+article .left-content,
+article .right-content {
+  width: 50%;
+  padding: 2%;
+  background: #fbcb6a;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px 2px #cdbb98;
 }
 .features {
-  margin: 20px 10px;
+  display: flex;
+  flex-direction: column;
 }
-.features ul {
-  list-style-type: circle;
-  list-style-position: inside;
-}
-.features ul li {
-  font-size: 1.6em;
-  margin: 20px auto;
-}
-.features ul p {
-  line-height: 1.3em;
+.features .feature-list {
+  margin: 1% 1% 1% 1%;
+  background: #fbcb6a;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px 2px #cdbb98;
 }
 .contact {
   margin: 2em 1em;
