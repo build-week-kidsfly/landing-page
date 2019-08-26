@@ -406,8 +406,9 @@ footer .login-footer a {
   background-color: white;
   color: black;
   border-radius: 15px;
+  box-shadow: 6px 8px rgba(0, 0, 0, 0.2);
 }
-.form-container .input2 {
+.form-container .input {
   margin-bottom: 20px;
 }
 /* Full-width input fields */
@@ -469,6 +470,7 @@ footer .login-footer a {
   background-color: white;
   color: black;
   border-radius: 15px;
+  box-shadow: 6px 8px rgba(0, 0, 0, 0.2);
 }
 .form-container2 .input2 {
   margin-bottom: 20px;
