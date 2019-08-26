@@ -1,46 +1,17 @@
 /* The popup form - hidden by default */
 .form-popup2 {
-  display: none;
-  position: fixed;
-  margin: 20px;
-  bottom: auto;
-  right: 75px;
-  z-index: 9;
-  border-radius: 20px;
-  border: 3px solid lightgrey;
+  .form-popup();
 }
 
 /* Add styles to the form container */
 .form-container2 {
-  max-width: 300px;
-  padding: 10px;
-  background-color: white;
-  color: black;
-  border-radius: 15px;
-  box-shadow: 6px 8px rgba(0, 0, 0, 0.2);
-
-  .input2 {
-    margin-bottom: 20px;
-  }
-
-  span {
-    font-size: 1.4em;
-    margin: auto 10px;
-  }
+  .form-container();
 }
 
 /* Full-width input fields */
 .form-container2 input[type="text"],
 .form-container2 input[type="password"] {
-  margin: 10px 0 10px 0;
-  border-radius: 30px;
-  width: 100%;
-  font-size: 1.6em;
-  padding: 0.8em;
-  border: none;
-  text-decoration: none;
-  background-color: lightgrey;
-  color: grey;
+  .form-container-text-password();
 }
 
 /* When the inputs get focus, do something */
@@ -52,16 +23,7 @@
 
 /* Set a style for the submit/login button */
 .form-container2 .btn2 {
-  background-color: @button-background;
-  color: white;
-  padding: 16px 20px;
-  border: none;
-  border-radius: 30px;
-  cursor: pointer;
-  width: 100%;
-  margin-bottom: 10px;
-  opacity: 0.8;
-  font-size: 1.6em;
+  .form-container-btn();
 }
 
 .button2 {

@@ -1,9 +1,8 @@
 .contact {
+  .margin-br(2em, 1em, 5em);
   background-color: @button-background;
-  margin: 20px 10px;
   text-align: center;
   height: 550px;
-  border-radius: 50px;
 
   form {
     margin: 10px auto;
@@ -11,8 +10,7 @@
     input,
     textarea,
     .submit {
-      margin: 10px auto;
-      border-radius: 30px;
+      .margin-br(0.8em, auto, 3em);
       width: 70%;
       font-size: 1.6em;
       padding: 0.8em;
@@ -20,7 +18,10 @@
       text-decoration: none;
       background-color: white;
       color: grey;
-      margin-top: 10px;
+    }
+
+    textarea {
+      border-radius: 2em;
     }
 
     .submit {

@@ -291,11 +291,11 @@ body header .header-text h1 {
   line-height: 1.3em;
 }
 .contact {
+  margin: 2em 1em;
+  border-radius: 5em;
   background-color: #40bf9f;
-  margin: 20px 10px;
   text-align: center;
   height: 550px;
-  border-radius: 50px;
 }
 .contact form {
   margin: 10px auto;
@@ -303,8 +303,8 @@ body header .header-text h1 {
 .contact form input,
 .contact form textarea,
 .contact form .submit {
-  margin: 10px auto;
-  border-radius: 30px;
+  margin: 0.8em auto;
+  border-radius: 3em;
   width: 70%;
   font-size: 1.6em;
   padding: 0.8em;
@@ -312,7 +312,9 @@ body header .header-text h1 {
   text-decoration: none;
   background-color: white;
   color: grey;
-  margin-top: 10px;
+}
+.contact form textarea {
+  border-radius: 2em;
 }
 .contact form .submit {
   color: black;
@@ -325,7 +327,6 @@ footer {
   margin-top: 50px;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.7);
-  color: white;
   width: 100%;
   padding: 2rem;
 }
@@ -406,10 +407,14 @@ footer .login-footer a {
   background-color: white;
   color: black;
   border-radius: 15px;
-  box-shadow: 6px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
 }
-.form-container .input {
+.form-container .input2 {
   margin-bottom: 20px;
+}
+.form-container span {
+  font-size: 1.4em;
+  margin: auto 10px;
 }
 /* Full-width input fields */
 .form-container input[type="text"],
@@ -443,6 +448,9 @@ footer .login-footer a {
   opacity: 0.8;
   font-size: 1.6em;
 }
+.button2 {
+  margin-top: 20px;
+}
 /* Add a red background color to the cancel button */
 .form-container .cancel {
   background-color: red;
@@ -470,7 +478,14 @@ footer .login-footer a {
   background-color: white;
   color: black;
   border-radius: 15px;
-  box-shadow: 6px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
+}
+.form-container2 .input2 {
+  margin-bottom: 20px;
+}
+.form-container2 span {
+  font-size: 1.4em;
+  margin: auto 10px;
 }
 .form-container2 .input2 {
   margin-bottom: 20px;
