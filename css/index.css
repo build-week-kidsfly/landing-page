@@ -344,11 +344,11 @@ article .right-content {
   display: flex;
   background: lightgray;
   border-radius: 10px;
-  height: 100%;
+  align-items: stretch;
 }
 .features .feature-list .feature-left .feature-img img {
-  width: 85%;
   margin: 5% 0% 5% 5%;
+  padding-right: 15%;
 }
 .features .feature-list .feature-left .vert-hr {
   background: black;
