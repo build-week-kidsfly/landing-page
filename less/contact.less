@@ -1,9 +1,8 @@
 .contact {
-  .margin-br(2em, 1em, 5em);
+  .margin-br(2em, 2em, 5em);
   background-color: @button-background;
   text-align: center;
   height: 550px;
-  // border: 1px solid black;
 
   form {
     margin: 10px auto;
@@ -21,8 +20,18 @@
       color: grey;
     }
 
+    input {
+      @media @tablet {
+        max-width: 400px;
+      }
+    }
+
     textarea {
       border-radius: 2em;
+
+      @media @tablet {
+        max-width: 400px;
+      }
     }
 
     .submit {

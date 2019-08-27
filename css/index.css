@@ -353,7 +353,7 @@ article .right-content {
   border-radius: 10px;
 }
 .contact {
-  margin: 2em 1em;
+  margin: 2em 2em;
   border-radius: 5em;
   background-color: #40bf9f;
   text-align: center;
@@ -375,8 +375,18 @@ article .right-content {
   background-color: white;
   color: grey;
 }
+@media (min-width: 800px) {
+  .contact form input {
+    max-width: 400px;
+  }
+}
 .contact form textarea {
   border-radius: 2em;
+}
+@media (min-width: 800px) {
+  .contact form textarea {
+    max-width: 400px;
+  }
 }
 .contact form .submit {
   color: black;
