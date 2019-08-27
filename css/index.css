@@ -325,19 +325,24 @@ article .right-content {
   box-shadow: 2px 2px 5px 2px #cdbb98;
   display: flex;
   align-items: center;
-  height: 128px;
 }
 .features .feature-list .feature-left {
-  width: 150px;
+  display: flex;
+  background: lightgray;
+  border-radius: 10px;
+  align-items: stretch;
 }
-.features .feature-list .feature-img img {
-  width: 85%;
+.features .feature-list .feature-left .feature-img img {
+  margin: 5% 0% 5% 5%;
+  padding-right: 15%;
 }
-.features .feature-list .vert-hr {
-  height: 90%;
+.features .feature-list .feature-left .vert-hr {
   background: black;
   border: 3px solid black;
   border-radius: 10px;
+}
+.features .feature-list .feature-content {
+  margin-left: 2%;
 }
 .contact {
   margin: 5em auto;
