@@ -299,6 +299,19 @@ article .left-content {
     margin-right: 2em;
   }
 }
+article .right-content {
+  display: flex;
+  flex-direction: column;
+}
+article .right-content .right-img img {
+  margin-left: 1em;
+  width: 94%;
+}
+@media (min-width: 1000px) {
+  article .right-content .right-img img {
+    margin-left: 1.3em;
+  }
+}
 article .left-content,
 article .right-content {
   background: #fbcb6a;
