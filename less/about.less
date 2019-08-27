@@ -10,8 +10,20 @@ article {
     margin: 0;
   }
 
+  @media (min-width: 840px) {
+    margin-top: 3em;
+  }
+
   .left-content {
     margin: 2em auto;
+
+    @media @tablet {
+      height: 180px;
+    }
+
+    @media @desktop {
+      height: 140px;
+    }
   }
 
   .left-content,
