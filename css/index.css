@@ -341,23 +341,35 @@ article .right-content {
   align-items: center;
   height: 128px;
 }
+.features .feature-list .feature-left {
+  width: 150px;
+}
 .features .feature-list .feature-img img {
   width: 85%;
-  margin: 0% 0% 0% 5%;
 }
 .features .feature-list .vert-hr {
   height: 90%;
-  margin: 1%;
   background: black;
   border: 3px solid black;
   border-radius: 10px;
 }
 .contact {
-  margin: 5em 2em;
+  margin: 5em auto;
   border-radius: 5em;
   background-color: #40bf9f;
   text-align: center;
   height: 550px;
+  max-width: 900px;
+}
+@media (min-width: 500px) {
+  .contact {
+    margin: 5em 2em;
+  }
+}
+@media (min-width: 901px) {
+  .contact {
+    margin: 5em auto;
+  }
 }
 .contact form {
   margin: 10px auto;

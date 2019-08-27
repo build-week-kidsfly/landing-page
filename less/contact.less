@@ -1,8 +1,17 @@
 .contact {
-  .margin-br(5em, 2em, 5em);
+  .margin-br(5em, auto, 5em);
   background-color: @button-background;
   text-align: center;
   height: 550px;
+  max-width: 900px;
+
+  @media @mobile {
+    margin: 5em 2em;
+  }
+
+  @media (min-width: 901px) {
+    margin: 5em auto;
+  }
 
   form {
     margin: 10px auto;
