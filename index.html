@@ -29,60 +29,9 @@
 
             <div class="login">
 
-                <!-- Login Pop Up -->
-                <a href="#" onclick="openForm()">Login</a>
-
-                <div class="form-popup" id="myForm">
-                    <form action="/action_page.php" class="form-container">
-                        <h2>Login</h2>
-
-                        <!-- <label for="email"><b>Email</b></label> -->
-                        <div class="input">
-
-                            <input type="text" placeholder="Enter Email" name="email" required>
-
-                            <!-- <label for="psw"><b>Password</b></label> -->
-                            <input type="password" placeholder="Enter Password" name="psw" required>
-                        </div>
-                        <div class="button2">
-                            <button type="submit" class="btn">Login</button>
-                            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-                        </div>
-                    </form>
-                </div>
-
-                <!-- Sign Up Pop Up -->
-                <a href="#" onclick="openForm2()">Sign Up</a>
-
-                <div class="form-popup2" id="myForm2">
-                    <form action="/action_page.php" class="form-container2">
-                        <h2>Sign Up</h2>
-
-                        <div class="input2">
-
-                            <div class="radioButtons">
-                                <input type="radio" name="new_account"><span>New Admin</span>
-
-                                <input type="radio" name="new_account"><span>New Customer</span>
-                            </div>
-                            <input type="text" placeholder="Enter Name" name="name" required>
-
-                            <input type="text" placeholder="Enter Email" name="email" required>
-
-                            <input type="text" placeholder="Enter Password" name="password_1" required>
-
-                            <input type="text" placeholder="Enter Password Again" name="password_2" required>
-
-                        </div>
-
-                        <div class="button2">
-                            <button type="submit" class="btn2">Login</button>
-                            <button type="button" class="btn2 cancel2" onclick="closeForm2()">Close</button>
-                        </div>
-                    </form>
-                </div>
+                <a href="#">Login</a>
+                <a href="#">Sign Up</a>
             </div>
-
         </nav>
     </div>
 
@@ -118,8 +67,10 @@
 
         <h2>Features</h2>
         <div class="feature-list">
-            <div class="feature-left"><div class="feature-img"><img src="images/plane.png"></div>
-            <div class=vert-hr></div></div>
+            <div class="feature-left">
+                <div class="feature-img"><img src="images/plane.png"></div>
+                <div class=vert-hr></div>
+            </div>
             <div class="feature-content">
                 <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
             </div>
@@ -175,26 +126,6 @@
             <p>&copy; 2019 Denise Chaloupka, Nadia Childs, Nathan Loveless & Tiffany Simionescu</p>
         </div>
     </footer>
-
-    <!-- Login and Sign Up Pop Up Script -->
-    <script>
-        function openForm() {
-            document.getElementById("myForm").style.display = "block";
-        }
-
-        function closeForm() {
-            document.getElementById("myForm").style.display = "none";
-        }
-
-        function openForm2() {
-            document.getElementById("myForm2").style.display = "block";
-        }
-
-        function closeForm2() {
-            document.getElementById("myForm2").style.display = "none";
-        }
-    </script>
-
 </body>
 
 </html>
