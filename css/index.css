@@ -314,11 +314,13 @@ article .right-content {
 .features {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  margin: 1.5em;
 }
 .features .feature-list {
-  margin: 1% 1% 1% 1%;
+  margin: 1em;
   background: #fbcb6a;
-  border-radius: 10px;
+  border-radius: 1em;
   box-shadow: 2px 2px 5px 2px #cdbb98;
   display: flex;
   align-items: center;
@@ -326,11 +328,11 @@ article .right-content {
 }
 .features .feature-list .feature-img img {
   width: 85%;
-  margin: 0% 0% 0% 5%;
+  margin: 0 1em;
 }
 .features .feature-list .vert-hr {
   height: 90%;
-  margin: 1%;
+  margin: 1em;
   background: black;
   border: 3px solid black;
   border-radius: 10px;
