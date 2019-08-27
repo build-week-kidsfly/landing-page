@@ -7,71 +7,124 @@
 
     <title>KidsFly</title>
 
+    <link rel="shortcut icon" type="image/x-icon" href="/images/plane-logo.ico" />
     <link rel="stylesheet" type="text/css" href="/css/index.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
-    <div class="navigation" id="top">
+    <div class="navigation">
 
         <div class="img">
-            <img src="images/plane-logo.png" alt="logo">
-            <!--<span>KidsFly</span>-->
+            <img src="images/plane-logo.png" alt="logo" id="home">
         </div>
 
         <nav>
             <div class="nav-elements">
-                <a href="#about">About</a>
+                <a href="#content-panel">About</a>
                 <a href="#features">Features</a>
                 <a href="#contact">Contact</a>
             </div>
+
             <div class="login">
+
                 <a href="#">Login</a>
                 <a href="#">Sign Up</a>
             </div>
-
         </nav>
     </div>
 
     <header>
         <div class="header-text">
             <h1>Welcome to KidsFly</h1>
-            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum
-                tortor quam,
-                feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.
-                Aenean
-                ultricies
-                mi vitae est. Mauris placerat eleifend leo.</p>
+            <p>Schedule. Arrive. Relax. Fly</p>
+            <p>(Except you must keep track of your kids.)</p>
         </div>
     </header>
 
-    <article id="about">
+    <article id="content-panel">
 
-        <div class="left">
-            <!-- Loren Ipsum Text -->
+        <div class="left-content">
+            <p>As a parent, it's next to impossible to fly if you have multiple kids. Holding a baby while trying to
+                carry your own
+                luggage, the baby's luggage, the toddler's luggage, the carseat, the stroller, etc. is physically
+                impossible.</p>
         </div>
 
-        <div class="right">
-            <!-- Pictures -->
+        <div class="right-content">
+            <p>KidsFly
+                will alert airport staff when you arrive to have an airport employee ready at the curb when you arrive.
+                Let
+                us handle the heavy lifting with an extra set of hands, so you can focus on your excited young ones.
+                Have a safe flight!</p>
         </div>
 
     </article>
 
     <div class="features" id="features">
 
+        <h2>Features</h2>
+        <div class="feature-list">
+            <div class="feature-left">
+                <div class="feature-img"><img src="images/plane.png"></div>
+                <div class=vert-hr></div>
+            </div>
+            <div class="feature-content">
+                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+            </div>
+        </div>
+        <div class="feature-list">
+            <div class="feature-img"><img src="images/clock.png"></div>
+            <div class=vert-hr></div>
+            <div class="feature-content">
+                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+            </div>
+        </div>
+        <div class="feature-list">
+            <div class="feature-img"><img src="images/calendar.png"></div>
+            <div class=vert-hr></div>
+            <div class="feature-content">
+                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+            </div>
+        </div>
+        <div class="feature-list">
+            <div class="feature-img"><img src="images/mobile.png"></div>
+            <div class=vert-hr></div>
+            <div class="feature-content">
+                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+            </div>
+        </div>
     </div>
 
-    <div class="contact" id="contact"></div>
+    <div class="contact" id="contact">
 
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" name="first_name" value="First Name"><br>
+            <input type="text" name="last_name" value="Last Name"><br>
+            <input type="email" name="email" value="info@email.com"><br>
+            <textarea rows="8" cols="50">How can we help you?</textarea>
+            <br>
+            <br>
+            <br>
+            <a href="#" class="submit">Submit</a>
+        </form>
+    </div>
     <footer>
-        <nav>
-            <a href="#top">Home</a>
-            <a href="#about">About</a>
-            <a href="#features">Features</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </footer>
+        <div class="navigation-footer">
+            <nav class="nav-footer">
 
+                <div class="nav-elements-footer">
+                    <a href="#home">Home</a>
+                    <a href="#content-panel">About</a>
+                    <a href="#features">Features</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </nav>
+            <p>&copy; 2019 Denise Chaloupka, Nadia Childs, Nathan Loveless & Tiffany Simionescu</p>
+        </div>
+    </footer>
 </body>
 
 </html>

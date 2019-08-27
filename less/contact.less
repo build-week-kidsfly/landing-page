@@ -1,0 +1,55 @@
+.contact {
+  .margin-br(5em, auto, 5em);
+  background-color: @button-background;
+  text-align: center;
+  height: 550px;
+  max-width: 900px;
+
+  @media @mobile {
+    margin: 5em 2em;
+  }
+
+  @media (min-width: 901px) {
+    margin: 5em auto;
+  }
+
+  form {
+    margin: 10px auto;
+
+    input,
+    textarea,
+    .submit {
+      .margin-br(0.8em, auto, 3em);
+      width: 70%;
+      font-size: 1.6em;
+      padding: 0.8em;
+      border: none;
+      text-decoration: none;
+      background-color: white;
+      color: grey;
+    }
+
+    input {
+      @media @tablet {
+        max-width: 400px;
+      }
+    }
+
+    textarea {
+      border-radius: 2em;
+
+      @media @tablet {
+        max-width: 400px;
+      }
+    }
+
+    .submit {
+      color: black;
+    }
+
+    .submit:hover {
+      background-color: black;
+      color: white;
+    }
+  }
+}

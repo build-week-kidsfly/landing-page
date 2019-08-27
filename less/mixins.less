@@ -2,3 +2,29 @@
 @mobile: ~"(min-width: 500px)";
 @tablet: ~"(min-width: 800px)";
 @desktop: ~"(min-width: 1000px)";
+
+// Parametric Mixins
+.margin-br(@marginFirst, @marginSecond, @borderRadius) {
+  margin: @marginFirst @marginSecond;
+  border-radius: @borderRadius;
+}
+
+.flex(@justify-content) {
+  display: flex;
+  justify-content: @justify-content;
+}
+
+// Mixins
+.a-nav-footer() {
+  text-decoration: none;
+  color: white;
+  font-size: 1.4em;
+  width: 8em;
+  height: 2em;
+  text-align: center;
+  line-height: 2em;
+  font-family: sans-serif;
+  text-transform: capitalize;
+  position: relative;
+  transition: 0.5s;
+}
