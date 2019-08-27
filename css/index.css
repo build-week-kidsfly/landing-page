@@ -276,21 +276,40 @@ body header .header-text h1 {
 }
 article {
   display: flex;
-  margin: 1% 1% 1% 1%;
+  flex-direction: column;
+  align-items: center;
+  margin: 1.5em;
+}
+@media (min-width: 800px) {
+  article {
+    flex-direction: row;
+    justify-content: center;
+    margin: 0;
+  }
 }
 article .left-content {
-  margin-right: 1%;
-}
-article .left-content {
-  margin-left: 1%;
+  margin: 2em auto;
 }
 article .left-content,
 article .right-content {
-  width: 50%;
-  padding: 2%;
+  width: 95%;
+  padding: 1.5em;
   background: #fbcb6a;
   border-radius: 10px;
   box-shadow: 2px 2px 5px 2px #cdbb98;
+}
+@media (min-width: 800px) {
+  article .left-content,
+  article .right-content {
+    max-width: 350px;
+    margin: 1.5em;
+  }
+}
+@media (min-width: 1000px) {
+  article .left-content,
+  article .right-content {
+    max-width: 450px;
+  }
 }
 .features {
   display: flex;
