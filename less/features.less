@@ -10,34 +10,35 @@
       background: @panel-bk-color;
       margin: 1% 1% 1% 1%;
       background: @panel-bk-color;
-      // border: 1px solid black;
       border-radius: 10px;
       box-shadow: 2px 2px 5px 2px @panel-bk-shadow-color;
       display: flex;
       align-items: center;
-      height: 128px; 
 
       .feature-left
       {
-        width: 150px;
-      }
+        display: flex;
+        background: lightgray;
+        border-radius: 10px;
+        height: 100%;
 
-          .feature-img 
+        .feature-img 
           {
             img 
             {
               width: 85%;
-              //margin: 0% 0% 0% 5%;
+              margin: 5% 0% 5% 5%;
             }
         }
 
         .vert-hr 
-        {
-          height: 90%;
-          //margin: 1%;
+        {          
           background: black;
           border: 3px solid black;
           border-radius: 10px;
         }
+      }
+      
+      .feature-content { margin-left: 2%; }
     }
 }
