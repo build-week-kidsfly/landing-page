@@ -2,21 +2,22 @@ article {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 1.5em;
+  margin: 1.5em auto;
 
   @media @tablet {
     flex-direction: row;
-    justify-content: center;
-    margin: 0;
+    max-width: 800px;
   }
 
   @media (min-width: 840px) {
     margin-top: 3em;
   }
 
-  .left-content {
-    margin: 2em auto;
+  @media @desktop {
+    max-width: 900px;
+  }
 
+  .left-content {
     @media @tablet {
       height: 180px;
     }
@@ -28,19 +29,8 @@ article {
 
   .left-content,
   .right-content {
-    width: 95%;
-    padding: 1.5em;
     background: @panel-bk-color;
     border-radius: 10px;
     box-shadow: 2px 2px 5px 2px @panel-bk-shadow-color;
-
-    @media @tablet {
-      max-width: 350px;
-      margin: 1.5em;
-    }
-
-    @media @desktop {
-      max-width: 450px;
-    }
   }
 }
