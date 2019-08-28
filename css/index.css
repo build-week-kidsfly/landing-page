@@ -293,6 +293,9 @@ article {
 article .left-content {
   margin-bottom: 2em;
 }
+article .left-content .left-img {
+  margin-bottom: 1.5em;
+}
 @media (min-width: 800px) {
   article .left-content {
     margin-bottom: 0;
@@ -302,6 +305,9 @@ article .left-content {
 article .right-content {
   display: flex;
   flex-direction: column;
+}
+article .right-content .right-img {
+  margin-bottom: 1.5em;
 }
 article .right-content .right-img img {
   margin-left: 1em;
@@ -326,7 +332,7 @@ article .right-content {
   margin: 1.5em;
 }
 .features .feature-list {
-  margin: 1% 1% 1% 1%;
+  margin: 1%;
   background: #fbcb6a;
   border-radius: 10px;
   box-shadow: 2px 2px 5px 2px #cdbb98;
