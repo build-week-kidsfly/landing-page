@@ -13,6 +13,10 @@
     margin: 5em auto;
   }
 
+  @media @desktop {
+    max-width: 1000px;
+  }
+
   form {
     margin: 10px auto;
 
@@ -30,17 +34,12 @@
     }
 
     input {
-      @media @tablet {
-        max-width: 400px;
-      }
+      max-width: 400px;
     }
 
     textarea {
       border-radius: 2em;
-
-      @media @tablet {
-        max-width: 400px;
-      }
+      max-width: 400px;
     }
 
     .submit {

@@ -1,14 +1,23 @@
 body {
   background-image: url(/images/toy-planes.jpeg);
-  background-size: 100%;
   background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100%;
+
+  @media @tablet {
+    background-size: 800px;
+  }
+
+  @media @desktop {
+    background-size: 1000px;
+  }
 
   header {
     .flex(flex-end);
     align-items: flex-end;
 
     .header-text {
-      margin-top: 282px;
+      margin-top: 56%;
       text-align: center;
       background-color: rgba(0, 0, 0, 0.7);
       color: white;
@@ -16,12 +25,13 @@ body {
       padding: 2rem;
 
       @media @tablet {
-        margin-bottom: 8em;
+        margin: 41% auto 2em auto;
+        max-width: 800px;
       }
 
       @media @desktop {
-        margin-top: 400px;
-        margin-bottom: 9em;
+        max-width: 1000px;
+        margin: 46% auto 0 auto;
       }
 
       h1 {
