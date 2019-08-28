@@ -383,22 +383,30 @@ article .right-content {
   .features .feature-list .feature-left {
     width: 250px;
     padding: 1em;
+    border-radius: 10px 0 0 10px;
+    border-right: 6px solid black;
   }
 }
 .features .feature-list .feature-left .feature-img {
   text-align: center;
+  padding-top: 1em;
 }
 .features .feature-list .feature-left .feature-img img {
-  padding-bottom: 2%;
+  padding-bottom: 1em;
 }
 .features .feature-list .feature-left .vert-hr {
   background: black;
   border: 3px solid black;
-  border-radius: 10px;
+}
+@media (min-width: 800px) {
+  .features .feature-list .feature-left .vert-hr {
+    display: none;
+  }
 }
 .features .feature-list .feature-content {
   align-items: center;
   margin-left: 2%;
+  padding: 1em;
 }
 @media (min-width: 800px) {
   .features .feature-list .feature-content {

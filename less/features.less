@@ -38,26 +38,33 @@
       @media @tablet {
         width: 250px;
         padding: 1em;
+        border-radius: 10px 0 0 10px;
+        border-right: 6px solid black;
       }
 
       .feature-img {
         text-align: center;
+        padding-top: 1em;
 
         img {
-          padding-bottom: 2%;
+          padding-bottom: 1em;
         }
       }
 
       .vert-hr {
         background: black;
         border: 3px solid black;
-        border-radius: 10px;
+
+        @media @tablet {
+          display: none;
+        }
       }
     }
 
     .feature-content {
       align-items: center;
       margin-left: 2%;
+      padding: 1em;
 
       @media @tablet {
         width: 550px;
@@ -65,11 +72,6 @@
 
       @media @desktop {
         width: 750px;
-      }
-
-      .para {
-        @media @tablet {
-        }
       }
     }
   }
