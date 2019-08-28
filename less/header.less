@@ -1,7 +1,16 @@
 body {
   background-image: url(/images/toy-planes.jpeg);
-  background-size: 100%;
   background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100%;
+
+  @media @tablet {
+    background-size: 800px;
+  }
+
+  @media @desktop {
+    background-size: 1000px;
+  }
 
   header {
     .flex(flex-end);
@@ -16,12 +25,13 @@ body {
       padding: 2rem;
 
       @media @tablet {
-        margin-top: 42%;
-        margin-bottom: 2em;
+        margin: 41% auto 2em auto;
+        max-width: 800px;
       }
 
       @media @desktop {
-        margin-top: 46%;
+        max-width: 1000px;
+        margin: 46% auto 0 auto;
       }
 
       h1 {

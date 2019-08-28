@@ -165,8 +165,19 @@ img {
 }
 body {
   background-image: url(/images/toy-planes.jpeg);
-  background-size: 100%;
   background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100%;
+}
+@media (min-width: 800px) {
+  body {
+    background-size: 800px;
+  }
+}
+@media (min-width: 1000px) {
+  body {
+    background-size: 1000px;
+  }
 }
 body header {
   display: flex;
@@ -183,13 +194,14 @@ body header .header-text {
 }
 @media (min-width: 800px) {
   body header .header-text {
-    margin-top: 42%;
-    margin-bottom: 2em;
+    margin: 41% auto 2em auto;
+    max-width: 800px;
   }
 }
 @media (min-width: 1000px) {
   body header .header-text {
-    margin-top: 46%;
+    max-width: 1000px;
+    margin: 46% auto 0 auto;
   }
 }
 body header .header-text h1 {
@@ -201,6 +213,18 @@ body header .header-text h1 {
   background-color: rgba(0, 0, 0, 0.7);
   color: white;
   height: 5rem;
+}
+@media (min-width: 800px) {
+  .navigation {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1000px) {
+  .navigation {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
 }
 .navigation .img {
   display: flex;
@@ -278,22 +302,28 @@ article {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 2em;
+  margin: 4em;
 }
 @media (min-width: 800px) {
   article {
     flex-direction: row;
+    align-items: flex-start;
+    max-width: 800px;
+    margin: 0 auto;
   }
 }
-@media (min-width: 840px) {
+@media (min-width: 1000px) {
   article {
-    margin-top: 3em;
+    max-width: 1000px;
+    margin: 0 auto;
   }
 }
 article .left-content {
   margin-bottom: 2em;
 }
 article .left-content .left-img {
+  display: flex;
+  justify-content: center;
   margin-bottom: 1.5em;
 }
 @media (min-width: 800px) {
@@ -303,19 +333,24 @@ article .left-content .left-img {
   }
 }
 article .right-content {
-  display: flex;
-  flex-direction: column;
-}
-article .right-content .right-img {
   margin-bottom: 1.5em;
 }
+article .right-content .right-img {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5em;
+}
+@media (min-width: 800px) {
+  article .right-content .right-img {
+    margin-bottom: 1.6em;
+  }
+}
 article .right-content .right-img img {
-  margin-left: 1em;
-  width: 94%;
+  max-width: 345px;
 }
 @media (min-width: 1000px) {
   article .right-content .right-img img {
-    margin-left: 1.3em;
+    max-width: 445px;
   }
 }
 article .left-content,
@@ -324,6 +359,18 @@ article .right-content {
   border-radius: 10px;
   box-shadow: 2px 2px 5px 2px #cdbb98;
   padding: 1.5em;
+}
+@media (min-width: 800px) {
+  article .left-content,
+  article .right-content {
+    margin-top: 3em;
+  }
+}
+@media (min-width: 1000px) {
+  article .left-content,
+  article .right-content {
+    margin-top: 5em;
+  }
 }
 .features {
   width: 450px;
@@ -387,6 +434,12 @@ article .right-content {
     margin: 5em auto;
   }
 }
+@media (min-width: 1000px) {
+  .contact {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+}
 .contact form {
   margin: 10px auto;
 }
@@ -429,6 +482,12 @@ footer {
   background-color: rgba(0, 0, 0, 0.7);
   width: 100%;
   padding: 2em;
+}
+@media (min-width: 1000px) {
+  footer {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
 }
 footer .nav-footer {
   display: flex;
