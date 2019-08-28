@@ -1,42 +1,56 @@
 body {
-  background-image: url(/images/toy-planes.jpeg);
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: 100%;
+  // background-image: url(/images/toy-planes-font.jpg);
+  // background-repeat: no-repeat;
+  // background-position: top center;
+  // background-size: 100%;
 
-  @media @tablet {
-    background-size: 800px;
-  }
+  // @media @tablet {
+  //   background-size: 800px;
+  // }
 
-  @media @desktop {
-    background-size: 1000px;
-  }
+  // @media @desktop {
+  //   background-size: 1000px;
+  // }
 
   header {
-    .flex(flex-end);
-    align-items: flex-end;
-
-    .header-text {
-      margin-top: 56%;
-      text-align: center;
-      background-color: rgba(0, 0, 0, 0.7);
-      color: white;
-      width: 100%;
-      padding: 2rem;
-
-      @media @tablet {
-        margin: 41% auto 2em auto;
-        max-width: 800px;
-      }
-
-      @media @desktop {
-        max-width: 1000px;
-        margin: 46% auto 0 auto;
-      }
-
-      h1 {
-        margin-bottom: 20px;
-      }
+    @media @mobile {
+      max-width: 100%;
+      margin: 0 auto;
     }
+
+    @media @tablet {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    @media @desktop {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    //   .flex(flex-end);
+    //   align-items: flex-end;
+
+    //   .header-text {
+    //     margin-top: 56%;
+    //     text-align: center;
+    //     background-color: rgba(0, 0, 0, 0.7);
+    //     color: white;
+    //     width: 100%;
+    //     padding: 2rem;
+
+    //     @media @tablet {
+    //       margin: 41% auto 2em auto;
+    //       max-width: 800px;
+    //     }
+
+    //     @media @desktop {
+    //       max-width: 1000px;
+    //       margin: 46% auto 0 auto;
+    //     }
+
+    //     h1 {
+    //       margin-bottom: 20px;
+    //     }
+    //   }
   }
 }
