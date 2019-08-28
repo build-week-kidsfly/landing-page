@@ -385,26 +385,16 @@ article .right-content {
   }
 }
 .contact {
-  margin: 5em auto;
+  margin: 5em 2em;
   border-radius: 5em;
   background-color: #40bf9f;
   text-align: center;
   height: 550px;
-  max-width: 900px;
-}
-@media (min-width: 500px) {
-  .contact {
-    margin: 5em 2em;
-  }
-}
-@media (min-width: 901px) {
-  .contact {
-    margin: 5em auto;
-  }
 }
 @media (min-width: 1000px) {
   .contact {
     max-width: 1000px;
+    margin: 5em auto;
   }
 }
 .contact form {
