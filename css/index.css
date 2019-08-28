@@ -326,38 +326,39 @@ article .right-content {
   padding: 1.5em;
 }
 .features {
+  width: 450px;
   display: flex;
   flex-direction: column;
-  margin: 1.5em;
+  align-items: center;
 }
 .features .feature-list {
-  margin: 1% 1% 1% 1%;
+  margin: 2% 2% 2% 2%;
   background: #fbcb6a;
   border-radius: 10px;
   box-shadow: 2px 2px 5px 2px #cdbb98;
   display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .features .feature-list .feature-left {
-  display: flex;
-  justify-content: flex-start;
+  width: 100%;
+  align-items: center;
   background: lightgray;
   border-radius: 10px;
 }
+.features .feature-list .feature-left .feature-img {
+  text-align: center;
+}
 .features .feature-list .feature-left .feature-img img {
-  margin: 5% 0% 5% 5%;
-  padding-right: 15%;
+  padding-bottom: 2%;
 }
 .features .feature-list .feature-left .vert-hr {
   background: black;
   border: 3px solid black;
   border-radius: 10px;
 }
-.features .feature-list .feature-left .feature-content {
-  display: flex;
-  align-items: center;
-  margin-left: 2%;
-}
 .features .feature-list .feature-content {
+  align-items: center;
   margin-left: 2%;
 }
 .contact {
