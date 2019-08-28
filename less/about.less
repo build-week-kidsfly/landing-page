@@ -21,7 +21,10 @@ article {
     margin-bottom: 2em;
 
     .left-img {
+      display: flex;
+      justify-content: center;
       margin-bottom: 1.5em;
+      // margin: 0 auto 1.5em auto;
     }
 
     @media @tablet {
@@ -34,15 +37,16 @@ article {
     margin-bottom: 1.5em;
 
     .right-img {
+      display: flex;
+      justify-content: center;
       margin-bottom: 1.5em;
 
       @media @tablet {
-        margin-bottom: 0;
+        margin-bottom: 1.6em;
       }
 
       img {
         margin-left: 1em;
-        width: 94%;
 
         @media @desktop {
           margin-left: 1.3em;
