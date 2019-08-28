@@ -293,6 +293,9 @@ article {
 article .left-content {
   margin-bottom: 2em;
 }
+article .left-content .left-img {
+  margin-bottom: 1.5em;
+}
 @media (min-width: 800px) {
   article .left-content {
     margin-bottom: 0;
@@ -302,6 +305,9 @@ article .left-content {
 article .right-content {
   display: flex;
   flex-direction: column;
+}
+article .right-content .right-img {
+  margin-bottom: 1.5em;
 }
 article .right-content .right-img img {
   margin-left: 1em;
@@ -346,9 +352,12 @@ article .right-content {
   border: 3px solid black;
   border-radius: 10px;
 }
-.features .feature-list .feature-content {
+.features .feature-list .feature-left .feature-content {
   display: flex;
   align-items: center;
+  margin-left: 2%;
+}
+.features .feature-list .feature-content {
   margin-left: 2%;
 }
 .contact {
