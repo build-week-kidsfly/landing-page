@@ -302,7 +302,7 @@ article {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 4em;
+  margin: 4em 2em;
 }
 @media (min-width: 800px) {
   article {
