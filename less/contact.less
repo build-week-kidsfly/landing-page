@@ -5,8 +5,7 @@
   height: 550px;
 
   @media @desktop {
-    max-width: 1000px;
-    margin: 5em auto;
+    .max-width-margin(1000px, 5em, auto);
   }
 
   form {
@@ -21,8 +20,7 @@
       padding: 0.8em;
       border: none;
       text-decoration: none;
-      background-color: white;
-      color: grey;
+      .color(white, grey);
     }
 
     input {
@@ -39,8 +37,7 @@
     }
 
     .submit:hover {
-      background-color: black;
-      color: white;
+      .color(black, white);
     }
   }
 }

@@ -6,12 +6,11 @@ footer {
   padding: 2em;
 
   @media @desktop {
-    max-width: 1000px;
-    margin: 0 auto;
+    .max-width-margin(1000px, 0, auto);
   }
 
   .nav-footer {
-    .flex(center);
+    .flex-justify(center);
     padding: 0;
     list-style-type: none;
     margin-bottom: 1.5em;
@@ -25,8 +24,7 @@ footer {
     a::after {
       content: "";
       position: absolute;
-      width: 0.6em;
-      height: 0.6em;
+      .width-height(0.6em, 0.6em);
       transition: 0.5s cubic-bezier(0.5, -0.5, 0.25, 1.5);
     }
 
@@ -46,8 +44,7 @@ footer {
 
     a:hover::before,
     a:hover::after {
-      width: 100%;
-      height: 100%;
+      .width-height(100%, 100%);
       border-radius: 0;
       background-color: @button-background;
     }

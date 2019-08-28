@@ -1,18 +1,15 @@
 body {
   header {
     @media @mobile {
-      max-width: 100%;
-      margin: 0 auto;
+      .max-width-margin(100%, 0, auto);
     }
 
     @media @tablet {
-      max-width: 800px;
-      margin: 0 auto;
+      .max-width-margin(800px, 0, auto);
     }
 
     @media @desktop {
-      max-width: 1000px;
-      margin: 0 auto;
+      .max-width-margin(1000px, 0, auto);
     }
   }
 }

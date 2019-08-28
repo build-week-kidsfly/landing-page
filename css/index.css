@@ -321,8 +321,8 @@ article .right-content {
 }
 @media (min-width: 800px) {
   article .right-content {
-    height: 525px;
     width: 380px;
+    height: 525px;
   }
 }
 article .right-content .right-img {
@@ -357,8 +357,8 @@ article .right-content {
 @media (min-width: 1000px) {
   article .left-content,
   article .right-content {
-    height: 600px;
     width: 480px;
+    height: 600px;
   }
 }
 .features {
