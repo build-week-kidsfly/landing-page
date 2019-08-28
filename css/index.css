@@ -361,6 +361,14 @@ article .right-content {
   align-items: center;
   margin-left: 2%;
 }
+@media (min-width: 800px) {
+  .features {
+    width: 750px;
+  }
+  .features .feature-list {
+    flex-direction: row;
+  }
+}
 .contact {
   margin: 5em auto;
   border-radius: 5em;
