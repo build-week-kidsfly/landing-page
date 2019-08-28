@@ -1,7 +1,6 @@
 .features {
   display: flex;
   flex-direction: column;
-  align-items: center;
   margin: 1.5em;
 
   .feature-list {
@@ -11,13 +10,12 @@
     border-radius: 10px;
     box-shadow: 2px 2px 5px 2px @panel-bk-shadow-color;
     display: flex;
-    align-items: center;
 
     .feature-left {
       display: flex;
+      justify-content: flex-start;
       background: lightgray;
       border-radius: 10px;
-      align-items: stretch;
 
       .feature-img {
         img {
@@ -30,6 +28,12 @@
         background: black;
         border: 3px solid black;
         border-radius: 10px;
+      }
+
+      .feature-content {
+        display: flex;
+        align-items: center;
+        margin-left: 2%;
       }
     }
 
