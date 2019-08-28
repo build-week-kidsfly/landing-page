@@ -2,7 +2,6 @@
 {
   display: flex;
   flex-direction: column;
-  align-items: center;
   margin: 1.5em;
 
     .feature-list 
@@ -12,16 +11,14 @@
       background: @panel-bk-color;
       border-radius: 10px;
       box-shadow: 2px 2px 5px 2px @panel-bk-shadow-color;
-      display: flex;
-      align-items: center;
+      display: flex;      
 
       .feature-left
       {
         display: flex;
+        justify-content: flex-start;
         background: lightgray;
         border-radius: 10px;
-        align-items: stretch;
-
 
         .feature-img 
           {
@@ -40,6 +37,6 @@
         }        
       }
       
-      .feature-content { margin-left: 2%; }
+      .feature-content { display: flex; align-items: center; margin-left: 2%; }
     }
 }

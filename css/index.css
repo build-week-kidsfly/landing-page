@@ -322,7 +322,6 @@ article .right-content {
 .features {
   display: flex;
   flex-direction: column;
-  align-items: center;
   margin: 1.5em;
 }
 .features .feature-list {
@@ -331,13 +330,12 @@ article .right-content {
   border-radius: 10px;
   box-shadow: 2px 2px 5px 2px #cdbb98;
   display: flex;
-  align-items: center;
 }
 .features .feature-list .feature-left {
   display: flex;
+  justify-content: flex-start;
   background: lightgray;
   border-radius: 10px;
-  align-items: stretch;
 }
 .features .feature-list .feature-left .feature-img img {
   margin: 5% 0% 5% 5%;
@@ -349,6 +347,8 @@ article .right-content {
   border-radius: 10px;
 }
 .features .feature-list .feature-content {
+  display: flex;
+  align-items: center;
   margin-left: 2%;
 }
 .contact {
