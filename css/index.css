@@ -332,7 +332,7 @@ article .right-content {
   margin: 1.5em;
 }
 .features .feature-list {
-  margin: 1%;
+  margin: 1% 1% 1% 1%;
   background: #fbcb6a;
   border-radius: 10px;
   box-shadow: 2px 2px 5px 2px #cdbb98;
