@@ -2,19 +2,18 @@ article {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 2em;
+  margin: 4em;
+
+  @media @tablet {
+    flex-direction: row;
+    align-items: flex-start;
+    max-width: 800px;
+    margin: 0 auto;
+  }
 
   @media @desktop {
     max-width: 1000px;
     margin: 0 auto;
-  }
-
-  @media @tablet {
-    flex-direction: row;
-  }
-
-  @media (min-width: 840px) {
-    margin-top: 3em;
   }
 
   .left-content {
@@ -45,10 +44,10 @@ article {
       }
 
       img {
-        margin-left: 1em;
+        max-width: 345px;
 
         @media @desktop {
-          margin-left: 1.3em;
+          max-width: 445px;
         }
       }
     }
@@ -60,5 +59,13 @@ article {
     border-radius: 10px;
     box-shadow: 2px 2px 5px 2px @panel-bk-shadow-color;
     padding: 1.5em;
+
+    @media @tablet {
+      margin-top: 3em;
+    }
+
+    @media @desktop {
+      margin-top: 5em;
+    }
   }
 }
