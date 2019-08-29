@@ -54,6 +54,46 @@
         <img src="images/loading-font.jpg" alt="plane with family">
     </header>
 
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 4</div>
+            <img src="images/family.jpeg" style="width: 450px">
+            <div class="text">Caption Text</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 4</div>
+            <img src="images/family.jpeg" style="width: 450px">
+            <div class="text">Caption Two</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 4</div>
+            <img src="images/family.jpeg" style="width: 450px">
+            <div class="text">Caption Three</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 4</div>
+            <img src="images/family.jpeg" style="width: 250px">
+            <div class="text">Caption Four</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+
+
     <div class="contact" id="contact">
 
         <h2>Contact Us</h2>
@@ -82,6 +122,7 @@
             <p>&copy; 2019 Denise Chaloupka, Nadia Childs, Nathan Loveless & Tiffany Simionescu</p>
         </div>
     </footer>
+    <script src="scripts/carousel.js"></script>
 </body>
 
 </html>
