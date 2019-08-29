@@ -1,20 +1,15 @@
 .contact {
-  .margin-br(5em, auto, 5em);
+  .margin-br(5em, 2em, 5em);
   background-color: @button-background;
   text-align: center;
   height: 550px;
-  max-width: 900px;
 
-  @media @mobile {
-    margin: 5em 2em;
-  }
-
-  @media (min-width: 901px) {
-    margin: 5em auto;
+  @media @tablet {
+    .max-width-margin(800px, 5em, auto);
   }
 
   @media @desktop {
-    max-width: 1000px;
+    .max-width-margin(1000px, 5em, auto);
   }
 
   form {
@@ -29,8 +24,7 @@
       padding: 0.8em;
       border: none;
       text-decoration: none;
-      background-color: white;
-      color: grey;
+      .color(white, grey);
     }
 
     input {
@@ -47,8 +41,7 @@
     }
 
     .submit:hover {
-      background-color: black;
-      color: white;
+      .color(black, white);
     }
   }
 }

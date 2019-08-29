@@ -1,42 +1,15 @@
 body {
-  background-image: url(/images/toy-planes.jpeg);
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: 100%;
-
-  @media @tablet {
-    background-size: 800px;
-  }
-
-  @media @desktop {
-    background-size: 1000px;
-  }
-
   header {
-    .flex(flex-end);
-    align-items: flex-end;
+    @media @mobile {
+      .max-width-margin(100%, 0, auto);
+    }
 
-    .header-text {
-      margin-top: 56%;
-      text-align: center;
-      background-color: rgba(0, 0, 0, 0.7);
-      color: white;
-      width: 100%;
-      padding: 2rem;
+    @media @tablet {
+      .max-width-margin(800px, 0, auto);
+    }
 
-      @media @tablet {
-        margin: 41% auto 2em auto;
-        max-width: 800px;
-      }
-
-      @media @desktop {
-        max-width: 1000px;
-        margin: 46% auto 0 auto;
-      }
-
-      h1 {
-        margin-bottom: 20px;
-      }
+    @media @desktop {
+      .max-width-margin(1000px, 0, auto);
     }
   }
 }

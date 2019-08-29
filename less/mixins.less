@@ -9,9 +9,29 @@
   border-radius: @borderRadius;
 }
 
-.flex(@justify-content) {
+.flex-direction(@direction) {
+  display: flex;
+  flex-direction: @direction;
+}
+
+.flex-justify(@justify-content) {
   display: flex;
   justify-content: @justify-content;
+}
+
+.max-width-margin(@width, @marginFirst, @marginSecond) {
+  max-width: @width;
+  margin: @marginFirst @marginSecond;
+}
+
+.width-height(@width, @height) {
+  width: @width;
+  height: @height;
+}
+
+.color(@bk-color, @color) {
+  background-color: @bk-color;
+  color: @color;
 }
 
 // Mixins
@@ -27,4 +47,8 @@
   text-transform: capitalize;
   position: relative;
   transition: 0.5s;
+}
+
+.box-shadow() {
+  box-shadow: 2px 2px 5px 2px @panel-bk-shadow-color;
 }
