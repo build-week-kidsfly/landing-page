@@ -446,6 +446,12 @@ article .right-content {
   text-align: center;
   height: 550px;
 }
+@media (min-width: 800px) {
+  .contact {
+    max-width: 800px;
+    margin: 5em auto;
+  }
+}
 @media (min-width: 1000px) {
   .contact {
     max-width: 1000px;
