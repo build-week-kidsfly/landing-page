@@ -95,79 +95,8 @@
 // carouselContainer.appendChild(carouselC());
 // console.log(carouselContainer);
 
-<<<<<<< HEAD
-function carouselC() {
-  const carousel = document.createElement('div');
-  carousel.classList.add('carousel');
-
-  const leftButton = document.createElement('div');
-  leftButton.classList.add('left-button');
-  leftButton.textContent = '<';
-  leftButton.addEventListener('click', () => moveLeft());
-
-  const img1 = document.createElement('img');
-  img1.src = '../images/kidswalking.jpg';
-  img1.style.display = 'block';
-
-  const img2 = document.createElement('img');
-  img2.src = '../images/family.jpeg';
-
-  const img3 = document.createElement('img');
-  img3.src = '../images/momandkid_square.jpg';
-
-  const img4 = document.createElement('img');
-  img4.src = '../images/toy-planes-font.jpg';
-
-  const imgArray = [
-    img1,
-    img2,
-    img3,
-    img4
-  ]
-
-  console.log(imgArray);
-
-  i = 0;
-
-  function moveLeft() {
-    if (i === 0) {
-      imgArray[i].style.display = 'none';
-      i = imgArray.length - 1;
-      imgArray[i].style.display = 'block';
-    } else {
-      imgArray[i].style.display = 'none';
-      i--;
-      imgArray[i].style.display = 'block';
-    }
-  }
-
-  function moveRight() {
-    if (i === imgArray.length - 1) {
-      imgArray[i].style.display = 'none';
-      i = 0;
-      imgArray[i].style.display = 'block';
-    } else {
-      imgArray[i].style.display = 'none';
-      i++;
-      imgArray[i].style.display = 'block';
-    }
-  }
-
-  const rightButton = document.createElement('div');
-  rightButton.classList.add('right-button');
-  rightButton.textContent = '>';
-  rightButton.addEventListener('click', () => moveRight());
-
-  carousel.appendChild(leftButton);
-  carousel.appendChild(img1);
-  carousel.appendChild(img2);
-  carousel.appendChild(img3);
-  carousel.appendChild(img4);
-  carousel.appendChild(rightButton);
-=======
 var slideIndex = 1;
 showSlides(slideIndex);
->>>>>>> a45c4cc14143eae041da04822a90539ad2686ed9
 
 function plusSlides(n) {
   showSlides((slideIndex += n));
