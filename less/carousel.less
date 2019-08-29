@@ -1,42 +1,121 @@
+.mySlides {
+  display: none;
 
-.carousel {
-  //.width-100();
-  //.flex(center, center);
-  height: 300px;
-  position: relative;
-  overflow: hidden;
-  margin-top: 16px;
-  @media(min-width: 1200px){
-    width: 1200px;
-  }
-  .left-button, .right-button {
-    //.flex(center);
-    //color: @lambda-times-color-white;
-    //background-color: @lambda-times-color-primary;
-    font-size: 40px;
-    border-radius: 50%;
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    cursor: pointer;
-    &:hover {
-      //color: @lambda-times-color-primary;
-      //background-color: @lambda-times-color-white;
-      //border: 2px solid @lambda-times-color-primary;
-    }
-  }
-  .left-button {
-    top: 50%; 
-    left: 25px;
-    transform: translate(0, -50%);
-  }
-  .right-button {
-    top: 50%; 
-    right: 25px;
-    transform: translate(0, -50%);
-  }
   img {
-    //.width-100();
-    display: none;
+    vertical-align: middle;
+    border-radius: 3em;
+  }
+}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  margin: 5em auto 3em auto;
+  text-align: center;
+
+  @media @tablet {
+    max-width: 800px;
+  }
+
+  @media @desktop {
+    max-width: 1000px;
+  }
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: @button-background;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0.5em;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Position the "previous button" to the left */
+.prev {
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.caption-text {
+  color: white;
+  padding: 1.5em;
+  bottom: 8px;
+  width: 480px;
+  margin: 1em auto;
+  background-color: black;
+  text-align: center;
+  border-radius: 1.4em;
+
+  h3 {
+    font-size: 3.2em;
+  }
+
+  br {
+    font-size: 1.3em;
+  }
+}
+
+/* The circles/bullets/indicators */
+.circle {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.circle:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
   }
 }
