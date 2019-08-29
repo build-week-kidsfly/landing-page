@@ -375,6 +375,7 @@ article .right-content {
 @media (min-width: 1000px) {
   .features {
     width: 1000px;
+    margin-bottom: 4em;
   }
 }
 .features h2 {
