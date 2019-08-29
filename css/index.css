@@ -589,7 +589,7 @@ footer p {
 .next {
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  top: 40%;
   width: auto;
   padding: 16px;
   margin-top: -22px;
@@ -621,7 +621,7 @@ footer p {
   bottom: 8px;
   width: 480px;
   margin: 1em auto;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.7);
   text-align: center;
   border-radius: 1.4em;
 }
@@ -630,6 +630,13 @@ footer p {
 }
 .caption-text br {
   font-size: 1.3em;
+}
+.caption-text a {
+  color: white;
+  padding-left: 0.3em;
+}
+.caption-text a:hover {
+  color: #40bf9f;
 }
 /* The circles/bullets/indicators */
 .circle {

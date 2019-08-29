@@ -27,7 +27,7 @@
 .next {
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  top: 40%;
   width: auto;
   padding: 16px;
   margin-top: -22px;
@@ -63,7 +63,7 @@
   bottom: 8px;
   width: 480px;
   margin: 1em auto;
-  background-color: black;
+  background-color: @nav-bk-color;
   text-align: center;
   border-radius: 1.4em;
 
@@ -73,6 +73,16 @@
 
   br {
     font-size: 1.3em;
+  }
+
+  a {
+    // text-decoration: none;
+    color: white;
+    padding-left: 0.3em;
+  }
+
+  a:hover {
+    color: @button-background;
   }
 }
 
