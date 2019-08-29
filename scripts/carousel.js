@@ -95,7 +95,6 @@
 // carouselContainer.appendChild(carouselC());
 // console.log(carouselContainer);
 
-<<<<<<< HEAD
 function carouselC() {
   const carousel = document.createElement('div');
   carousel.classList.add('carousel');
@@ -164,10 +163,6 @@ function carouselC() {
   carousel.appendChild(img3);
   carousel.appendChild(img4);
   carousel.appendChild(rightButton);
-=======
-var slideIndex = 1;
-showSlides(slideIndex);
->>>>>>> f23dddbe39fa1ef6b16a9631d0c8584856dc4b07
 
 function plusSlides(n) {
   showSlides((slideIndex += n));
