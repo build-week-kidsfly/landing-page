@@ -30,17 +30,17 @@ function carouselC() {
   leftButton.addEventListener('click', () => moveLeft());
 
   const img1 = document.createElement('img');
-  img1.src = './assets/carousel/mountains.jpeg';
+  img1.src = '../images/kidswalking.jpg';
   img1.style.display = 'block';
 
   const img2 = document.createElement('img');
-  img2.src = './assets/carousel/computer.jpeg';
+  img2.src = '../images/family.jpeg';
 
   const img3 = document.createElement('img');
-  img3.src = './assets/carousel/trees.jpeg';
+  img3.src = '../images/momandkid_square.jpg';
 
   const img4 = document.createElement('img');
-  img4.src = './assets/carousel/turntable.jpeg';
+  img4.src = '../images/toy-planes-font.jpg';
 
   const imgArray = [
     img1,
